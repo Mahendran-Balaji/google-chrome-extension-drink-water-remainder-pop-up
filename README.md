@@ -106,6 +106,33 @@ Now, when you click on the extension icon, it will show a popup with data fetche
 
 ![App Screenshot](screenshot/Screenshot-for-binance-price.png)
 
+## Live 
+
+Step 7: Goto https://chrome.google.com/webstore/devconsole/register
+
+Step 8: Pay Registration Fees
+
+Step 9: Fill the business name and address
+
+Step 10: Goto 'Chrome Web Store Developer Dashbaord' -> Choose 'Items' 
+
+Step 11: Upload your compressed (.zip) file
+
+Step 12: Once Upload, Fill the following details:
+
+```
+12.1 Category (Communication/Developer Tools/Education and more)
+12.2 Language (English, Tamil and more)
+Grpahic Assets 
+ * Store Icon -> It Should be 128x128 pixels and PNG format
+ * Screenshots -> Up to a maximum of 5 1280x800 or 640x400 JPEG or 24-bit PNG (no alpha) At least one is required
+ 12.3 Additional Fields : We can add URLs
+```
+
+## Note
+
+Items staged to be published later will expire 30 days after they have passed review.
+
 ## Support
 
 For support, email bmahendranmca@gmail.com
