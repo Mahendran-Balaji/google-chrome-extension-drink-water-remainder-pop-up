@@ -129,6 +129,12 @@ Grpahic Assets
  12.3 Additional Fields : We can add URLs
 ```
 
+## Google Web Store Link
+
+<a href="https://chromewebstore.google.com/detail/binance-exchange-btcusdt/imhkoobjomcpacnobbepjiikflbogced?hl=en" target="_blank" rel="noreferrer">
+<img width="48" height="48" title="View My Google Chrome Extensions" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" srcset="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"></a>
+
+
 ## Note
 
 Items staged to be published later will expire 30 days after they have passed review.
