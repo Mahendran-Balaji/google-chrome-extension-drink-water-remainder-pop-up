@@ -1,24 +1,21 @@
-document.addEventListener('DOMContentLoaded', function () {
-  fetchData();
-});
-
-function fetchData() {
-  fetch('https://api.binance.com/api/v3/ticker/24hr?symbol=BTCUSDT')
-    .then(response => response.json())
-    .then(data => {
-      const dataContainer = document.getElementById('data-container');
-      var d = new Date(data.closeTime);
-
-      dataContainer.innerHTML = `
-        <b>Date Time:</b> ${d.toLocaleString()}<br>
-        <b>Symbol:</b> ${data.symbol}<br>
-        <b>Price:</b> ${data.lastPrice}<br>
-        <b>Trade Count:</b> ${data.count}
-      `;
-    })
-    .catch(error => {
-      console.log('Error fetching data:'+ error);
-      const dataContainer = document.getElementById('data-container');
-      dataContainer.textContent = 'Error fetching data';
-    });
+function setAlarm(event) {
+  const minutes = parseFloat(event.target.value);
+  console.log(event.target.value);
+  chrome.action.setBadgeText({ text: 'ON' });
+  chrome.alarms.create({ delayInMinutes: minutes });
+  chrome.storage.sync.set({ minutes: minutes });
+  window.close();
 }
+
+function clearAlarm() {
+  chrome.action.setBadgeText({ text: '' });
+  chrome.alarms.clearAll();
+  window.close();
+}
+
+// An Alarm delay of less than the minimum 1 minute will fire
+// in approximately 1 minute increments if released
+document.getElementById('sampleMinute').addEventListener('click', setAlarm);
+document.getElementById('min15').addEventListener('click', setAlarm);
+document.getElementById('min30').addEventListener('click', setAlarm);
+document.getElementById('cancelAlarm').addEventListener('click', clearAlarm);

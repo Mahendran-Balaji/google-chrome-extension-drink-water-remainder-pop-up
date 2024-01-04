@@ -1,14 +1,20 @@
 {
-  "name": "Binance Exchange BTCUSDT Current Price",
-  "description": "Fetch Binance current Price of BTCUSDT",
+  "name": "Drink Water Event Popup",
+  "description": "Reminds you to drink water, a great application that take care of your health.",
   "version": "1.0",
   "manifest_version": 3,
-  "minimum_chrome_version": "116",
+  "permissions": ["alarms", "notifications", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_icon": "icons/logo.png",
+    "default_title": "Drink Water Event",
     "default_popup": "popup.html"
   },
   "icons": {
-    "48": "icons/logo.png"
+    "16": "icons/drink_water16.png",
+    "32": "icons/drink_water32.png",
+    "48": "icons/drink_water48.png",
+    "128": "icons/drink_water128.png"
   }
 }
